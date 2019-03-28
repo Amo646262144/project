@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
+body{ font-size:12px; line-height:1.7em; color:#666;}
+ul{ list-style:none}
+img{ border:none}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:underline;}
+.fl{ float:left}
+.fr{ float:right}
+.center{ width:1000px; margin:0 auto;}
+a:hover img {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+ .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+
+ /* header */
+#top{width: 100%;height:200px;position: relative;}
+#top #shipin{width: 100%;}
+#top p{position: absolute;top: 10px;}
+#top p img{width: 35px;height: 35px;}
+
+#vip{width: 90%;height: 40px;background: #D9B056;border-radius: 5px;position: absolute;top:230px;left: 5%; 
+}
+#vip a{font-size: 16px;color:white;margin-left: 40px;line-height: 40px;}
+#vip img{vertical-align: -3px;}
+h2{width:90%;position: absolute;left:5%;top: 290px;}
+#watch{width:90%;position: absolute;top:320px;left: 5%; }
+#watch a{color: #A9A9A9;font-size: 14px;}
+#down{position: absolute;left: 93%;top:305px; }
